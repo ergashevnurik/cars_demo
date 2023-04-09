@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+.calculator {
+    padding: 10px;
+    border-radius: 1em;
+    height: 500px;
+    width: 400px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.display-box {
+    font-family: 'Orbitron', sans-serif;
+    background-color: black;
+    border: solid black 0.5px;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 40px;
+    height: 65%;
+}
+#btn {
+    background-color: #f69906;
+}
+input[type=button] {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #313131;
+    color: white;
+    border: solid black 0.5px;
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+    font-size: 22px;
+    outline: none;
+    border-radius: 50%;
+}
+
+input[type=text] {
+    height: 100%;
+}
+
+input:active[type=button] {
+    background: #e5e5e5;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+}
+
+.grey {
+    background: #9f9f9f!important;
+    color: black!important;
+}
+
+td {
+    width: calc(100% / 4);
+    height: 90px;
+}
+
+.border-radius-medium {
+    border-radius: 50px!important;
+}
+
+@media screen and (max-width: 768px) {
+    .calculator {
+        padding: 24px;
+    }
+    td {
+        height: 80px!important;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .calculator {
+        padding: 24px;
+    }
+    td {
+        height: 30px!important;
+    }
+}
+
+
+footer {
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 10px;
+    text-align: center;
+}
+
+footer a {
+    color: #f69906;
+    text-decoration: none;
+}
